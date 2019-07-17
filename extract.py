@@ -14,7 +14,7 @@ def extract(key, inFile):
 
     count = 0
     length = ''
-    while count < 8:  # length is limited to 255 characters because 2^8 = 256
+    while count < 32:  # length is limited to 255 characters because 2^8 = 256
         x = random.randint(0, width)
         y = random.randint(0, height)
         count = count + 1

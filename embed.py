@@ -20,7 +20,7 @@ def embed(msg, key, inFile):
     # determine length of message and store that information first
 
     arrayLength = len(binArray)  # tells us how many characters in string
-    binArray = [bin(arrayLength)[2:].zfill(8)] + binArray #add length of message in binary format to front of our binArray;  max length of message is 255 characters
+    binArray = [bin(arrayLength)[2:].zfill(32)] + binArray #add length of message in binary format to front of our binArray;  max length of message is 255 characters
     
     random.seed(key)  # initializes the internal state of the random number generator
     for byte in binArray:
